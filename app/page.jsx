@@ -1,6 +1,5 @@
-import PostsList from "@/components/Home/PostsList";
-import { posts } from "@/blogposts/posts";
+import HomeComponent from "@/components/Home/HomeComponent";
 
 export default function Home() {
-  return <PostsList posts={posts} />;
+  return <HomeComponent />;
 }

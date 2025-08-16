@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+input {
+  @apply w-[250px] border border-gray-400 px-3 py-1 rounded-md lg:w-[500px] outline-gray-400;
+}
