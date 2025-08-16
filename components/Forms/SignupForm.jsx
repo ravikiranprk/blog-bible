@@ -21,12 +21,13 @@ export default function SigninForm() {
       return;
     }
 
-    // const userByEmail = await getUserByEmail(email);
+    let userByEmail = await getUserByEmail(email);
+    const user = Array.isArray(userByEmail) ? userByEmail[0] : userByEmail;
 
-    // if(userByEmail) {
-    //     setError("User already exists!");
-    //     return;
-    // }
+    if(user) {
+        setError("User already exists!");
+        return;
+    }
 
     try {
       const res = await createUser({ email, password });

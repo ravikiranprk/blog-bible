@@ -12,7 +12,7 @@ export default function Menu() {
     return (
       <section className="flex gap-4 items-center">
         <Link href="/signin" className="bg-cyan-700 text-zinc-50 px-3 py-1 rounded-md">Signin</Link>
-        <Link href="/signup" className="bg-gray-900 text-zinc-50 px-3 py-1 rounded-md hidden md:block">Signup</Link>
+        <Link href="/signup" className="bg-gray-900 text-zinc-50 px-3 py-1 rounded-md">Signup</Link>
       </section>
     )
   }
